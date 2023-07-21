@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!-- rglx's Super-Heavy Armor Cube Mod -->
+	<CubeBlocks>
+		<Definition>
+			<Id>
+				<TypeId>CubeBlock</TypeId>
+				<SubtypeId>LargeSuperHeavyBlockArmorBlock</SubtypeId>
+			</Id>
+			<DisplayName>Super-Heavy Armor Block</DisplayName>
+			<Icon>Textures\GUI\Icons\Cubes\rglx_super_heavy_armor_cube.dds</Icon>
+            <Description>Armor block with advanced material composition and deformation points which make it sturdier and suitable for use as frame for a combat spacecraft or as extremely-heavy armor capable of withstanding the harshest environments.</Description>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>Cube</BlockTopology>
+			<Size x="1" y="1" z="1" />
+			<ModelOffset x="0" y="0" z="0" />
+			<CubeDefinition>
+				<CubeTopology>Box</CubeTopology>
+				<ShowEdges>true</ShowEdges>
+				<Sides>
+					<Side Model="Models\Cubes\Large\Armor\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+					<Side Model="Models\Cubes\Large\Armor\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+					<Side Model="Models\Cubes\Large\Armor\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+					<Side Model="Models\Cubes\Large\Armor\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+					<Side Model="Models\Cubes\Large\Armor\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+					<Side Model="Models\Cubes\Large\Armor\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+				</Sides>
+			</CubeDefinition>
+			<Components>
+				<Component Subtype="SteelPlate" Count="100" />
+				<Component Subtype="MetalGrid" Count="50" />
+				<Component Subtype="SteelPlate" Count="400" />
+			</Components>
+			<CriticalComponent Subtype="SteelPlate" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.10" File="Models\Cubes\Large\Armor\HeavySquarePlateConstruction_1.mwm" />
+				<Model BuildPercentUpperBound="0.20" File="Models\Cubes\Large\Armor\HeavySquarePlateConstruction_2.mwm" RandomOrientation="true" />
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\HeavySquarePlateConstruction_3.mwm" RandomOrientation="true" />
+			</BuildProgressModels>
+			<Skeleton>
+				<BoneInfo>
+					<BonePosition x="0" y="0" z="0" />
+					<BoneOffset x="127" y="127" z="127" />
+				</BoneInfo>
+			</Skeleton>
+			<BlockPairName>SuperHeavyArmorBlock</BlockPairName>
+			<DeformationRatio>0</DeformationRatio>
+			<EdgeType>Heavy</EdgeType>
+			<BuildTimeSeconds>35</BuildTimeSeconds>
+			<DisassembleRatio>3</DisassembleRatio>
+			<PCU>2</PCU>
+            <PCUConsole>3</PCUConsole>
+            <IsAirTight>true</IsAirTight>
+		</Definition>
+		<Definition>
+			<Id>
+				<TypeId>CubeBlock</TypeId>
+				<SubtypeId>SmallSuperHeavyBlockArmorBlock</SubtypeId>
+			</Id>
+			<DisplayName>Super-Heavy Armor Block</DisplayName>
+			<Icon>Textures\GUI\Icons\Cubes\rglx_super_heavy_armor_cube.dds</Icon>
+            <Description>Armor block with advanced material composition and deformation points which make it sturdier and suitable for use as frame for a combat spacecraft or as extremely-heavy armor capable of withstanding the harshest environments.</Description>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>Cube</BlockTopology>
+			<Size x="1" y="1" z="1" />
+			<ModelOffset x="0" y="0" z="0" />
+			<CubeDefinition>
+				<CubeTopology>Box</CubeTopology>
+				<ShowEdges>true</ShowEdges>
+				<Sides>
+					<Side Model="Models\Cubes\Small\Armor\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+					<Side Model="Models\Cubes\Small\Armor\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+					<Side Model="Models\Cubes\Small\Armor\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+					<Side Model="Models\Cubes\Small\Armor\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+					<Side Model="Models\Cubes\Small\Armor\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+					<Side Model="Models\Cubes\Small\Armor\HeavySquarePlate.mwm" PatternWidth="4" PatternHeight="2" />
+				</Sides>
+			</CubeDefinition>
+			<Components>
+				<Component Subtype="SteelPlate" Count="3" />
+				<Component Subtype="MetalGrid" Count="2" />
+				<Component Subtype="SteelPlate" Count="22" />
+			</Components>
+			<CriticalComponent Subtype="SteelPlate" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.25" File="Models\Cubes\Small\Armor\HeavySquarePlateConstruction_1.mwm" RandomOrientation="true" />
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\Armor\HeavySquarePlateConstruction_2.mwm" RandomOrientation="true" />
+			</BuildProgressModels>
+			<Skeleton>
+				<BoneInfo>
+					<BonePosition x="0" y="0" z="0" />
+					<BoneOffset x="127" y="127" z="127" />
+				</BoneInfo>
+			</Skeleton>
+			<BlockPairName>SuperHeavyArmorBlock</BlockPairName>
+			<DeformationRatio>0.16</DeformationRatio>
+			<BuildTimeSeconds>12</BuildTimeSeconds>
+			<DisassembleRatio>3</DisassembleRatio>
+			<EdgeType>Heavy</EdgeType>
+			<PCU>2</PCU>
+            <PCUConsole>3</PCUConsole>
+            <IsAirTight>true</IsAirTight>
+		</Definition>
+	</CubeBlocks>
+	<CategoryClasses>
+	
+		<Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+			<Id>
+				<TypeId>GuiBlockCategoryDefinition</TypeId>
+				<SubtypeId/>
+			</Id>
+			<DisplayName>DisplayName_Category_ArmorBlocks</DisplayName>
+			<Name>Armorblocks</Name>
+			<ItemIds>
+				<string>SmallSuperHeavyBlockArmorBlock</string>
+				<string>LargeSuperHeavyBlockArmorBlock</string>
+			</ItemIds>
+		</Category>
+		<Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+			<Id>
+				<TypeId>GuiBlockCategoryDefinition</TypeId>
+				<SubtypeId/>
+			</Id>
+			<DisplayName>+ rglx</DisplayName>
+			<Name>z-mod-rglx</Name>
+			<IsShipCategory>false</IsShipCategory>
+			<IsBlockCategory>true</IsBlockCategory>
+			<ItemIds>
+				<string>SmallSuperHeavyBlockArmorBlock</string>
+				<string>LargeSuperHeavyBlockArmorBlock</string>
+			</ItemIds>
+		</Category>
+	</CategoryClasses>
+</Definitions>

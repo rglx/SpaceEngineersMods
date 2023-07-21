@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Sounds>
+		<Sound>
+			<Id>
+				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+				<SubtypeId>rglx_IonBeam_Dynamic</SubtypeId>
+			</Id>
+			<Category>SHIP_JET</Category>
+			<MaxDistance>2500</MaxDistance>
+			<Volume>0.5</Volume>
+			<Loopable>true</Loopable>
+			<SoundLimit>32</SoundLimit>
+			<Waves>
+				<Wave Type="D3">
+					<Start>Audio\ARC\SHIP\rglx\Ion_Start3d.wav</Start>
+					<Loop>Audio\ARC\SHIP\rglx\Ion_Loop3d.wav</Loop>
+					<End>Audio\ARC\SHIP\rglx\Ion_End3d.wav</End>
+				</Wave>
+			</Waves>
+		</Sound>
+	</Sounds>
+</Definitions> 
